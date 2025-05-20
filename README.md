@@ -39,9 +39,10 @@ INSTALLED_APPS = [
 
 **Create the views in our app :**
 
-**add the views in project under the url.py - urlPattern [] using path attribute**
+add the views in project under the url.py - urlPattern [] using path attribute
 
 from myFirstRestApp import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     **path('test/', views.myFisrtRestRequest, name='myFirstRest'),**
