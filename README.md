@@ -3,6 +3,7 @@ Django Rest Framework(DRF)
 **Installation: **
 To work on DRF we need python and Django as prerequisite.
 >pip instll python<Version>
+
 >pip install django
 
 then to work on Djonago Rest Framework install djandorestframework
@@ -12,7 +13,8 @@ if you are using mysql DB then please install mysqlclient
 >pip install mysqlclient
 
 **Creating Project -** 
-Note: in djanjo rest framework - one project with multimple app concept
+
+Note: in django rest framework - work with concept - one project with multimple app support
 
 Fist we will create project and then app
 >django-admin start-project myFirstRestProject
