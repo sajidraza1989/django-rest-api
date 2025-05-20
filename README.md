@@ -1,6 +1,6 @@
 Django Rest Framework(DRF)
 
-**Installation: **
+**Installation**:
 To work on DRF we need python and Django as prerequisite.
 >pip instll python<Version>
 
@@ -12,9 +12,9 @@ then to work on Djonago Rest Framework install djandorestframework
 if you are using mysql DB then please install mysqlclient
 >pip install mysqlclient
 
-**Creating Project -** 
+**Creating Project**: 
 
-Note: in django rest framework - work with concept - one project with multimple app support
+**Note**: django rest framework works with concept - one project with multiple app support
 
 Fist we will create project and then app
 >django-admin start-project myFirstRestProject
@@ -23,9 +23,8 @@ Go to that project cd myFirstRestProject and then create the app using below com
 >python manaage.py startapp myFirstRestApp
 
 **Register the app with project and ret_framework**
-open the settting.py of project
-navigate to INSTALLED_APPS
-and Add the our app and rest_framework
+
+open the settting.py of project, navigate to INSTALLED_APPS and Add the our app and rest_framework
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -51,7 +50,7 @@ urlpatterns = [
 **Run the server and hit the your view**
 localhost:8080/test/
 
-**now see the Response:**
+**Now see the Response:**
 
 
 
