@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 
 # Create your views here.
-def myFisrtRestRequest(request):
+def employee(request):
     emp = {
         'name': 'John Doe',
         'age': 30,
