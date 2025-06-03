@@ -53,5 +53,21 @@ localhost:8080/test/
 
 **Now see the Response:**
 
+**Connecing to DB**
+In Django, the default table name for a model is constructed as <app_label>_<model_name>, where <app_label> is the name of the app (in this case, myfirstrestapp), and <model_name> is the lowercase name of the model (employee). Therefore, the Employee model in the myFirstRestApp app is mapped to the myfirstrestapp_employee table in the database. This naming convention helps Django avoid table name conflicts across different apps.
+_To avoid Django’s default behavior of naming tables as <app_name>_<model_name>, you can explicitly set the database table name for each model using the db_table option in the model’s **Meta class**._
+
+# models.py
+from django.db import models
+
+class Employee(models.Model):
+    name = models.CharField(max_length=100)
+    salary = models.DecimalField(max_digits=10, decimal_places=2)
+    age = models.IntegerField()
+
+    class Meta:
+        db_table = 'employee'  # This will use 'employee' as the table name
+
+#With this, Django will use employee as the table name instead of myfirstrestapp_employee.
 
 
